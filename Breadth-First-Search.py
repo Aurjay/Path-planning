@@ -1,7 +1,8 @@
 import numpy as np
+#Defining starting and goal point.
 start = np.array([0, 0])
 goal = np.array([5, 9])
-#(1,1) is call
+#(1,1) is wall or obstacle.
 grid = np.array([[0, 0, 0, 0, 0, 0, 0, 1, 0, 0],  # Row 0
                  [0, 1, 1, 0, 0, 0, 0, 1, 0, 0],  # Row 1
                  [0, 1, 1, 0, 0, 0, 0, 0, 0, 0],  # Row 2
@@ -31,8 +32,7 @@ class BreadthFirstSearch:
         self.grid = grid
         self.path = path
 
-    # START - Student Section
-
+    # Here we check the validity of the list and check if a particular move is in the list of explored and not-explored list.
     def get_possible_moves(self):
         potential_moves = self.generate_potential_moves(self.pos)
         for move in potential_moves:
@@ -47,7 +47,7 @@ class BreadthFirstSearch:
 
         self.explored[self.pos_str] = 0
         return True
-
+    #This function sees if the goal is already in not_explored list.
     def goal_found(self):
         if self.goal_str in self.not_explored:
             self.pos = self.string_to_array(self.goal_str)
@@ -74,8 +74,6 @@ class BreadthFirstSearch:
 
         return True
 
-    # END - Student Section
-
     # Helper Functions
 
     def generate_potential_moves(self, pos):
@@ -85,7 +83,7 @@ class BreadthFirstSearch:
         r = np.array([0, 1])
 
         potential_moves = [pos + u, pos + d, pos + l, pos + r]
-        # Students, uncomment the line below,  what happens?
+        
         #potential_moves += [pos + u+r, pos + u+l, pos + d+r, pos + d+l]
         return potential_moves
 
