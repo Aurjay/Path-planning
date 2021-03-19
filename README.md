@@ -23,4 +23,4 @@ Heuristic Value = (Distance already travelled)+(Best estimate of distance to goa
 3. Execute the move with lowest heuristic value.
 4. Now that we are in new location we repeat the process.
 
-# Ideal path calculation = Cost of the path(g(n)) + Heuristic Value(h(n)).
+## Ideal path calculation = Cost of the path(g(n)) + Heuristic Value(h(n)).
