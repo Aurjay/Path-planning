@@ -1,7 +1,7 @@
-# Robotics Path-planning
+## Robotics Path-planning
 In this repository we implement various path planning techniques like Random Search Depth-First search,Breadth-First search and A* search by using python.
 
-#Steps for Random Search:
+## Steps for Random Search:
 1.Determines the next possible moves from current position.
 2.Check if any of next possible moves are goal point.
 3.Execute the next possible move.
