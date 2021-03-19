@@ -1,5 +1,5 @@
-![image](https://user-images.githubusercontent.com/47591132/111786686-bebea780-88c6-11eb-9b44-429e3608e177.png)
 # Robotics Path-planning
+![image](https://user-images.githubusercontent.com/47591132/111786686-bebea780-88c6-11eb-9b44-429e3608e177.png)
 In this repository we implement various path planning techniques like Random Search Depth-First search,Breadth-First search and A* search by using python.
 
 ## Steps for Random Search:
